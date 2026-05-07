@@ -2,9 +2,9 @@ apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
   name: pdfgenrs-test
-  namespace: teamsykmelding
+  namespace: pdfgen
   labels:
-    team: teamsykmelding
+    team: pdfgen
 spec:
   image: {{ image }}
   port: 8080
@@ -31,15 +31,12 @@ spec:
     logging:
       destinations:
         - id: loki
+    autoInstrumentation:
+      enabled: true
+      runtime: sdk
   resources:
     limits:
-      memory: 512Mi
+      memory: 256Mi
     requests:
       cpu: 10m
       memory: 100Mi
-  accessPolicy:
-    inbound:
-      rules:
-        - application: isbehandlerdialog
-          namespace: teamsykefravr
-          cluster: dev-gcp
