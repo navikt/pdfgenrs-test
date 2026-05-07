@@ -43,7 +43,7 @@ jobs:
             -X POST \
             -H "Content-Type: application/json" \
             -d @data/pdfgenrs-test/pdfgenrs-test.json \
-            http://localhost:8080/api/v1/genpdf/pale-2/pale-2 \
+            http://localhost:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test \
             -o response.pdf)
           
           if [ "$http_status" != "200" ]; then
