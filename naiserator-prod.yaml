@@ -1,0 +1,45 @@
+apiVersion: "nais.io/v1alpha1"
+kind: "Application"
+metadata:
+  name: pdfgenrs-test
+  namespace: teamsykmelding
+  labels:
+    team: teamsykmelding
+spec:
+  image: {{ image }}
+  port: 8080
+  replicas:
+    min: 2
+    max: 4
+    scalingStrategy:
+      cpu:
+        thresholdPercentage: 90
+  liveness:
+    path: /internal/is_alive
+    timeout: 1
+    initialDelay: 5
+    periodSeconds: 5
+    failureThreshold: 30
+  readiness:
+    path: /internal/is_alive
+    timeout: 1
+    initialDelay: 5
+    periodSeconds: 5
+    failureThreshold: 30
+  leaderElection: false
+  observability:
+    logging:
+      destinations:
+        - id: loki
+  resources:
+    limits:
+      memory: 1024Mi
+    requests:
+      cpu: 10m
+      memory: 128Mi
+  accessPolicy:
+    inbound:
+      rules:
+        - application: isbehandlerdialog
+          namespace: teamsykefravr
+          cluster: prod-gcp
