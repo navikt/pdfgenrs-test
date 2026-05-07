@@ -18,7 +18,6 @@ jobs:
           docker pull ghcr.io/navikt/pdfgenrs:0.1.41
           docker run \
             -v ${{ github.workspace }}/templates:/app/templates \
-            -v ${{ github.workspace }}/fonts:/app/fonts \
             -v ${{ github.workspace }}/data:/app/data \
             -v ${{ github.workspace }}/resources:/app/resources \
             -v ${{ github.workspace }}/resources:/app/templates/resources \
@@ -43,7 +42,7 @@ jobs:
           http_status=$(curl -s -w "%{http_code}" \
             -X POST \
             -H "Content-Type: application/json" \
-            -d @data/pale-2/pale-2.json \
+            -d @data/pdfgenrs-test/pdfgenrs-test.json \
             http://localhost:8080/api/v1/genpdf/pale-2/pale-2 \
             -o response.pdf)
           
