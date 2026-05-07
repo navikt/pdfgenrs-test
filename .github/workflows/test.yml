@@ -1,0 +1,62 @@
+name: Test PDF generation
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  test-pdf-generation:
+    name: Test PDF generation
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+      - name: Start pdfgenrs container
+        run: |
+          docker pull ghcr.io/navikt/pdfgenrs:0.1.27
+          docker run \
+            -v ${{ github.workspace }}/templates:/app/templates \
+            -v ${{ github.workspace }}/fonts:/app/fonts \
+            -v ${{ github.workspace }}/data:/app/data \
+            -v ${{ github.workspace }}/resources:/app/resources \
+            -v ${{ github.workspace }}/resources:/app/templates/resources \
+            -p 8080:8080 \
+            -e DEV_MODE=true \
+            --detach \
+            ghcr.io/navikt/pdfgenrs:0.1.27
+      - name: Wait for service to be ready
+        run: |
+          for i in $(seq 1 30); do
+            if curl -s -o /dev/null http://localhost:8080; then
+              echo "Service is ready"
+              exit 0
+            fi
+            echo "Waiting for service... ($i/30)"
+            sleep 2
+          done
+          echo "ERROR: Service did not become ready in time"
+          exit 1
+      - name: Generate PDF and verify response
+        run: |
+          http_status=$(curl -s -w "%{http_code}" \
+            -X POST \
+            -H "Content-Type: application/json" \
+            -d @data/pale-2/pale-2.json \
+            http://localhost:8080/api/v1/genpdf/pale-2/pale-2 \
+            -o response.pdf)
+          
+          if [ "$http_status" != "200" ]; then
+            echo "ERROR: Expected HTTP 200 but got $http_status"
+            cat response.pdf
+            exit 1
+          fi
+          
+          file_type=$(file --mime-type -b response.pdf)
+          echo "Response MIME type: $file_type"
+          if [ "$file_type" != "application/pdf" ]; then
+            echo "ERROR: Expected application/pdf but got $file_type"
+            exit 1
+          fi
+          echo "PDF generation successful"
