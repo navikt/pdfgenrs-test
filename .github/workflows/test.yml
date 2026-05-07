@@ -19,6 +19,7 @@ jobs:
           docker run \
             -v ${{ github.workspace }}/templates:/app/templates \
             -v ${{ github.workspace }}/data:/app/data \
+            -v ${{ github.workspace }}/fonts:/app/fonts \
             -v ${{ github.workspace }}/resources:/app/resources \
             -v ${{ github.workspace }}/resources:/app/templates/resources \
             -p 8080:8080 \
