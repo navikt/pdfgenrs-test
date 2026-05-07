@@ -34,6 +34,8 @@ spec:
     autoInstrumentation:
       enabled: true
       runtime: sdk
+  ingresses:
+    - "https://pdfgenrs-test.ansatt.dev.nav.no"
   resources:
     limits:
       memory: 256Mi
