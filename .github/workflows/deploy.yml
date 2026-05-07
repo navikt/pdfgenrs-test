@@ -1,4 +1,4 @@
-name: Deploy to dev and prod
+name: Deploy to dev
 on:
   push:
     branches:
@@ -19,7 +19,7 @@ jobs:
         uses: nais/docker-build-push@v0
         id: docker-build-push
         with:
-          team: teamsykmelding
+          team: pdfgen
           identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
           project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
       - name: deploy to dev-gcp
@@ -27,10 +27,4 @@ jobs:
         env:
           CLUSTER: dev-gcp
           RESOURCE: naiserator-dev.yaml
-          VAR: image=${{ steps.docker-build-push.outputs.image }}
-      - name: deploy to prod-gcp
-        uses: nais/deploy/actions/deploy@v2
-        env:
-          CLUSTER: prod-gcp
-          RESOURCE: naiserator-prod.yaml
           VAR: image=${{ steps.docker-build-push.outputs.image }}
