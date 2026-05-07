@@ -1,5 +1,3 @@
-![Build status](https://github.com/navikt/pdfgenrs-test/workflows/Deploy%20to%20dev%20and%20prod/badge.svg)
-
 # pdfgenrs-test
 Repository for pdfgenrs-test templates
 
