@@ -28,16 +28,13 @@ When running the application you can test GET requests at
 a PDF to your browser
 
 The template and data directory structure both follow the `<application>/<template>` structure.
-Example url: `http://0.0.0.0:8080/api/v1/genpdf/pale-2/pale-2`
+Example url: `http://0.0.0.0:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test`
 
-### Example pdf output
-[pdf](pale-2.pdf)
 
-[![Preview](pale-2-preview.png)](pale-2-preview.png)
 
 ### Local preview development 
 
-To preview the final output with real data, keep `./run_development.sh` running in a terminal and open `http://0.0.0.0:8080/api/v1/genpdf/pale-2/pale-2` in your browser. The Docker container hot-reloads template changes automatically when `DEV_MODE=true` is set.
+To preview the final output with real data, keep `./run_development.sh` running in a terminal and open `http://0.0.0.0:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test` in your browser. The Docker container hot-reloads template changes automatically when `DEV_MODE=true` is set.
 
 ## When upgrading pdfgenrs docker image
 
@@ -47,9 +44,9 @@ Remember to update all 5 occurrences across these 3 files.
 
 ### Contact
 
-This project is maintained by [navikt/teamsykmelding](CODEOWNERS)
+This project is maintained by [navikt/pdfgen](CODEOWNERS)
 
 Questions and/or feature requests? Please create an [issue](https://github.com/navikt/pdfgenrs-test/issues)
 
 If you work in [@navikt](https://github.com/navikt) you can reach us at the Slack
-channel [#team-sykmelding](https://nav-it.slack.com/archives/CMA3XV997)
+channel #pdfgen
