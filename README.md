@@ -1,5 +1,5 @@
 # pdfgenrs-test
-Repository for pdfgenrs-test templates
+Repository for pdfgenrs-test templates, that creates pdfs throw api
 
 ## Technologies & Tools
 
