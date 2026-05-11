@@ -36,7 +36,11 @@ To preview the final output with real data, keep `./run_development.sh` running 
 
 ## When upgrading pdfgenrs docker image
 
-Remember that the docker image version appears in multiple files: `Dockerfile` (1 place), `run_development.sh` (1 place), and `.github/workflows/test.yml` (1 place).
+Remember that the docker image version appears in multiple files:
+- `Dockerfile`: `FROM ghcr.io/navikt/pdfgenrs:<version>`
+- `run_development.sh`: default value of `PDFGENRS_IMAGE`
+- `.github/workflows/test.yml`: job `env.PDFGENRS_IMAGE`
+
 Remember to update all 3 occurrences across these files.
 
 
