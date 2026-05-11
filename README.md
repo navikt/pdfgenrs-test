@@ -1,5 +1,5 @@
 # pdfgenrs-test
-Repository for pdfgenrs-test templates, that creates pdfs throw api
+Repository for pdfgenrs-test templates that creates PDFs through an API.
 
 ## Technologies & Tools
 
@@ -36,8 +36,8 @@ To preview the final output with real data, keep `./run_development.sh` running 
 
 ## When upgrading pdfgenrs docker image
 
-Remember that the version for the docker image appears in multiple files: `Dockerfile` (1 place), `run_development.sh` (2 places), and `.github/workflows/test.yml` (2 places).
-Remember to update all 5 occurrences across these 3 files.
+Remember that the docker image version appears in multiple files: `Dockerfile` (1 place), `run_development.sh` (1 place), and `.github/workflows/test.yml` (1 place).
+Remember to update all 3 occurrences across these files.
 
 
 ### Contact
