@@ -21,6 +21,7 @@ jobs:
           docker run \
             -v ${{ github.workspace }}/templates:/app/templates \
             -v ${{ github.workspace }}/data:/app/data \
+            -v ${{ github.workspace }}/fonts/DejaVuSans.ttf:/app/fonts/DejaVuSans.ttf \
             -v ${{ github.workspace }}/resources:/app/resources \
             -p 8080:8080 \
             -e DEV_MODE=true \
