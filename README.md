@@ -44,7 +44,7 @@ Remember that the docker image version appears in multiple files:
 Remember to update all 3 occurrences across these files.
 
 
-### preview of live endpoints
+### Preview of live endpoints
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genhtml/pdfgenrs-test/pdfgenrs-test
 
