@@ -3,5 +3,5 @@ FROM ghcr.io/navikt/pdfgenrs:0.1.59
 COPY templates /app/templates
 COPY resources /app/resources
 COPY data /app/data
-COPY fonts /app/fonts
+COPY fonts/DejaVuSans.ttf /app/fonts/DejaVuSans.ttf
 ENV DEV_MODE=true
