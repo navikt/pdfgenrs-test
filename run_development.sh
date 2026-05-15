@@ -7,6 +7,7 @@ docker pull "$PDFGENRS_IMAGE"
 docker run \
         -v $CURRENT_PATH/templates:/app/templates \
         -v $CURRENT_PATH/data:/app/data \
+        -v $CURRENT_PATH/fonts/DejaVuSans.ttf:/app/fonts/DejaVuSans.ttf \
         -v $CURRENT_PATH/resources:/app/resources \
         -v $CURRENT_PATH/resources:/app/templates/resources \
         -p 8080:8080 \
