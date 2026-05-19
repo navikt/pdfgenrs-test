@@ -14,16 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
       - name: docker-build-push
-        uses: nais/docker-build-push@751a312f0803eb96a05a41fadf51be19b7be362c
+        uses: nais/docker-build-push@751a312f0803eb96a05a41fadf51be19b7be362c # v0
         id: docker-build-push
         with:
           team: pdfgen
           identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
           project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
       - name: deploy to dev-gcp
-        uses: nais/deploy/actions/deploy@v2
+        uses: nais/deploy/actions/deploy@a7f8690f9b367fcbf5348a0a1e21d44f1aae50eb # v2
         env:
           CLUSTER: dev-gcp
           RESOURCE: naiserator-dev.yaml
