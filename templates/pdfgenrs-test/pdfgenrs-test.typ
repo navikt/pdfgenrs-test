@@ -30,7 +30,7 @@
 #set page(margin: 1cm)
 #set text(font: ("Source Sans 3", "Noto Color Emoji", "DejaVu Sans"), lang: "nb", size: 10pt)
 #set table(stroke: 1pt + black, inset: 4pt)
-
+#show "\u{1001af}": "𐆯"
 
 // Header with NAV logo
 #grid(
