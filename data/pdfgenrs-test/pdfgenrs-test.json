@@ -6,7 +6,7 @@
     "yrkesrettetAttforing": false,
     "uforepensjon": true,
     "pasient": {
-      "fornavn": "Test \\u{1001af}\",
+      "fornavn": "Test `\\u{1001af}\`",
       "mellomnavn": "Testerino",
       "etternavn": "Testsen",
       "fnr": "0123456789",
