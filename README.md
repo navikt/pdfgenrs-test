@@ -19,6 +19,13 @@ Run the container with templates, test data, fonts, and resources mounted from y
 ./run_development.sh
 ```
 
+> **Note:** The `pdfgenrs` image is only published for `linux/amd64`. If you're on an arm64 host (e.g., Apple Silicon Mac), run with `--platform linux/amd64`:
+>
+> ```bash
+> docker pull --platform linux/amd64 ghcr.io/navikt/pdfgenrs:0.1.71
+> docker run --platform linux/amd64 ...
+> ```
+
 ### Preview output locally
 
 With `./run_development.sh` running, open:
