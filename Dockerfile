@@ -4,5 +4,6 @@ COPY templates /app/templates
 COPY resources /app/resources
 COPY data /app/data
 COPY fonts /app/fonts
+COPY typst.toml /app/typst.toml
 ENV DEV_MODE=true 
 #remove DEV_MODE=true when in prod
