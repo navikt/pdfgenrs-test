@@ -1,3 +1,5 @@
+// templates/pdfgenrs-test/pdfgenrs-test.typ
+#import "@preview/cmarker:0.1.0": *
 #import "@preview/oxifmt:1.0.0": strfmt
 #let data = json("/data.json")
 #let legeerklaering = data.legeerklaering
