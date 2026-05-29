@@ -9,7 +9,7 @@ docker run \
         -v $CURRENT_PATH/data:/app/data \
         -v $CURRENT_PATH/fonts:/app/fonts \
         -v $CURRENT_PATH/resources:/app/resources \
-        -v $CURRENT_PATH/typst.toml:/app/typst.toml \
+        -v $CURRENT_PATH/oxifmt/typst-oxifmt-1.0.0:/app/oxifmt \
         -p 8080:8080 \
         -e DEV_MODE=true \
         -it \
