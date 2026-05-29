@@ -1,4 +1,4 @@
-#import "@preview/oxifmt:1.0.0": strfmt
+#import "/oxifmt/typst-oxifmt-1.0.0/lib.typ": strfmt
 #let data = json("/data.json")
 #let legeerklaering = data.legeerklaering
 #let validationResult = data.validationResult
