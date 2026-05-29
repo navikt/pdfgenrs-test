@@ -19,6 +19,7 @@ jobs:
         run: |
           docker pull "$PDFGENRS_IMAGE"
           docker run \
+            --name pdfgenrs \
             -v ${{ github.workspace }}/templates:/app/templates \
             -v ${{ github.workspace }}/data:/app/data \
             -v ${{ github.workspace }}/fonts:/app/fonts \
@@ -37,7 +38,11 @@ jobs:
             echo "Waiting for service... ($i/30)"
             sleep 2
           done
-          echo "ERROR: Service did not become ready in time"
+          echo "::error::Service did not become ready in time"
+          echo "--- Container logs ---"
+          docker logs pdfgenrs
+          echo "--- Container status ---"
+          docker inspect --format='{{.State.Status}} (exit code: {{.State.ExitCode}})' pdfgenrs
           exit 1
       - name: Generate PDF and verify response
         run: |
@@ -47,17 +52,31 @@ jobs:
             -d @data/pdfgenrs-test/pdfgenrs-test.json \
             http://localhost:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test \
             -o response.pdf)
-          
+
           if [ "$http_status" != "200" ]; then
-            echo "ERROR: Expected HTTP 200 but got $http_status"
+            echo "::error::Expected HTTP 200 but got $http_status"
+            echo "--- Response body ---"
             cat response.pdf
+            echo ""
+            echo "--- Container logs ---"
+            docker logs pdfgenrs
             exit 1
           fi
-          
+
           file_type=$(file --mime-type -b response.pdf)
           echo "Response MIME type: $file_type"
           if [ "$file_type" != "application/pdf" ]; then
-            echo "ERROR: Expected application/pdf but got $file_type"
+            echo "::error::Expected application/pdf but got $file_type"
+            echo "--- Response body (first 200 bytes) ---"
+            head -c 200 response.pdf
+            echo ""
+            echo "--- Container logs ---"
+            docker logs pdfgenrs
             exit 1
           fi
           echo "PDF generation successful"
+      - name: Show container logs
+        if: always()
+        run: |
+          echo "--- Container logs ---"
+          docker logs pdfgenrs 2>&1 || true
