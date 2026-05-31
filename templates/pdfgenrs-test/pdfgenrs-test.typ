@@ -1,3 +1,4 @@
+#import "/oxifmt/lib.typ": strfmt
 #let data = json("/data.json")
 #let legeerklaering = data.legeerklaering
 #let validationResult = data.validationResult
@@ -10,7 +11,7 @@
   let date_part = s.split("T").at(0, default: s)
   let parts = date_part.split("-")
   if parts.len() >= 3 {
-    parts.at(2) + "." + parts.at(1) + "." + parts.at(0)
+    strfmt("{}.{}.{}", parts.at(2), parts.at(1), parts.at(0))
   } else {
     s
   }

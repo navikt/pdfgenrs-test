@@ -24,6 +24,7 @@ jobs:
             -v ${{ github.workspace }}/data:/app/data \
             -v ${{ github.workspace }}/fonts:/app/fonts \
             -v ${{ github.workspace }}/resources:/app/resources \
+            -v ${{ github.workspace }}/oxifmt/typst-oxifmt-1.0.0:/app/oxifmt \
             -p 8080:8080 \
             -e DEV_MODE=true \
             --detach \
