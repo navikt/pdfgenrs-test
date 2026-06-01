@@ -26,6 +26,9 @@ spec:
     initialDelay: 5
     periodSeconds: 5
     failureThreshold: 30
+  prometheus:
+    enabled: true
+    path: /internal//metrics
   leaderElection: false
   observability:
     logging:
