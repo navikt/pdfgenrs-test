@@ -23,7 +23,7 @@ jobs:
           identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
           project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
       - name: deploy to dev-gcp
-        uses: nais/deploy/actions/deploy@e90640a98702d2554350fb35c4d5d242dd8e4346 # v2
+        uses: nais/deploy/actions/deploy@8ed36847e27a937bb9cd9b3751b1a5fff8ef31dc # v2
         env:
           CLUSTER: dev-gcp
           RESOURCE: naiserator-dev.yaml
