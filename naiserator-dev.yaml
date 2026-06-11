@@ -19,13 +19,13 @@ spec:
     timeout: 1
     initialDelay: 5
     periodSeconds: 5
-    failureThreshold: 30
+    failureThreshold: 5
   readiness:
-    path: /internal/is_alive
+    path: /internal/is_ready
     timeout: 1
     initialDelay: 5
     periodSeconds: 5
-    failureThreshold: 30
+    failureThreshold: 5
   prometheus:
     enabled: true
     path: /internal/metrics
@@ -43,5 +43,5 @@ spec:
     limits:
       memory: 256Mi
     requests:
-      cpu: 5m
+      cpu: 7m
       memory: 128Mi
