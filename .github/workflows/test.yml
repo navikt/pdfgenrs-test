@@ -44,68 +44,89 @@ jobs:
           echo "--- Container status ---"
           docker inspect --format='{{.State.Status}} (exit code: {{.State.ExitCode}})' pdfgenrs
           exit 1
-      - name: Generate PDF and verify response
+      - name: Discover and test all template/data pairs
         run: |
-          http_status=$(curl -s -w "%{http_code}" \
-            -X POST \
-            -H "Content-Type: application/json" \
-            -d @data/pdfgenrs-test/pdfgenrs-test.json \
-            http://localhost:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test \
-            -o response.pdf)
+          failed=0
+          total=0
+          for data_file in $(find data -name '*.json' -type f | sort); do
+            # Extract template group and name from path: data/{group}/{name}.json
+            relative="${data_file#data/}"
+            group="$(dirname "$relative")"
+            name="$(basename "$relative" .json)"
+            total=$((total + 1))
 
-          if [ "$http_status" != "200" ]; then
-            echo "::error::Expected HTTP 200 but got $http_status"
-            echo "--- Response body ---"
-            cat response.pdf
-            echo ""
-            echo "--- Container logs ---"
-            docker logs pdfgenrs
+            echo "::group::Testing $group/$name"
+
+            # Test PDF generation
+            echo "--- PDF generation for $group/$name ---"
+            http_status=$(curl -s -w "%{http_code}" \
+              -X POST \
+              -H "Content-Type: application/json" \
+              -d @"$data_file" \
+              http://localhost:8080/api/v1/genpdf/"$group"/"$name" \
+              -o response.pdf)
+
+            if [ "$http_status" != "200" ]; then
+              echo "::error::[$group/$name] PDF: Expected HTTP 200 but got $http_status"
+              cat response.pdf 2>/dev/null || true
+              echo ""
+              docker logs pdfgenrs
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+
+            file_type=$(file --mime-type -b response.pdf)
+            if [ "$file_type" != "application/pdf" ]; then
+              echo "::error::[$group/$name] PDF: Expected application/pdf but got $file_type"
+              head -c 200 response.pdf
+              echo ""
+              docker logs pdfgenrs
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+            echo "PDF generation successful for $group/$name"
+
+            # Test HTML generation
+            echo "--- HTML generation for $group/$name ---"
+            http_status=$(curl -s -w "%{http_code}" \
+              -X POST \
+              -H "Content-Type: application/json" \
+              -d @"$data_file" \
+              http://localhost:8080/api/v1/genhtml/"$group"/"$name" \
+              -o response.html)
+
+            if [ "$http_status" != "200" ]; then
+              echo "::error::[$group/$name] HTML: Expected HTTP 200 but got $http_status"
+              cat response.html 2>/dev/null || true
+              echo ""
+              docker logs pdfgenrs
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+
+            file_type=$(file --mime-type -b response.html)
+            if [ "$file_type" != "text/html" ]; then
+              echo "::error::[$group/$name] HTML: Expected text/html but got $file_type"
+              head -c 500 response.html
+              echo ""
+              docker logs pdfgenrs
+              failed=$((failed + 1))
+              echo "::endgroup::"
+              continue
+            fi
+            echo "HTML generation successful for $group/$name"
+            echo "::endgroup::"
+          done
+
+          echo ""
+          echo "=== Results: $((total - failed))/$total templates passed ==="
+          if [ "$failed" -ne 0 ]; then
+            echo "::error::$failed template(s) failed"
             exit 1
           fi
-
-          file_type=$(file --mime-type -b response.pdf)
-          echo "Response MIME type: $file_type"
-          if [ "$file_type" != "application/pdf" ]; then
-            echo "::error::Expected application/pdf but got $file_type"
-            echo "--- Response body (first 200 bytes) ---"
-            head -c 200 response.pdf
-            echo ""
-            echo "--- Container logs ---"
-            docker logs pdfgenrs
-            exit 1
-          fi
-          echo "PDF generation successful"
-      - name: Generate HTML and verify response
-        run: |
-          http_status=$(curl -s -w "%{http_code}" \
-            -X POST \
-            -H "Content-Type: application/json" \
-            -d @data/pdfgenrs-test/pdfgenrs-test.json \
-            http://localhost:8080/api/v1/genhtml/pdfgenrs-test/pdfgenrs-test \
-            -o response.html)
-
-          if [ "$http_status" != "200" ]; then
-            echo "::error::Expected HTTP 200 but got $http_status"
-            echo "--- Response body ---"
-            cat response.html
-            echo ""
-            echo "--- Container logs ---"
-            docker logs pdfgenrs
-            exit 1
-          fi
-
-          file_type=$(file --mime-type -b response.html)
-          echo "Response MIME type: $file_type"
-          if [ "$file_type" != "text/html" ]; then
-            echo "::error::Expected text/html but got $file_type"
-            echo "--- Response body (first 500 bytes) ---"
-            head -c 500 response.html
-            echo ""
-            echo "--- Container logs ---"
-            docker logs pdfgenrs
-            exit 1
-          fi
-          echo "HTML generation successful"
       - name: Show container logs
         if: always()
         run: |
