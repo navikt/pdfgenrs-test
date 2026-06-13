@@ -9,7 +9,7 @@ jobs:
     name: Test PDF generation
     runs-on: ubuntu-latest
     env:
-      PDFGENRS_IMAGE: ghcr.io/navikt/pdfgenrs:1.0.0
+      PDFGENRS_IMAGE: ghcr.io/navikt/pdfgenrs:1.0.1
     permissions:
       contents: read
     steps:
