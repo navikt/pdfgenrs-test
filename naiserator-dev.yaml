@@ -44,4 +44,4 @@ spec:
       memory: 256Mi
     requests:
       cpu: 7m
-      memory: 128Mi
+      memory: 200Mi
