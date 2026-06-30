@@ -16,7 +16,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
       - name: docker-build-push
-        uses: nais/docker-build-push@751a312f0803eb96a05a41fadf51be19b7be362c # v0
+        uses: nais/docker-build-push@f8bc7437f7549c2b08197152d781b98f8727a08a # v0
         id: docker-build-push
         with:
           team: pdfgen
