@@ -41,7 +41,7 @@ spec:
     - "https://pdfgenrs-test.ansatt.dev.nav.no"
   resources:
     limits:
-      memory: 256Mi
+      memory: 2000Mi
     requests:
       cpu: 12m
-      memory: 200Mi
+      memory: 128Mi
