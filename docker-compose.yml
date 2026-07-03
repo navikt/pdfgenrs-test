@@ -1,6 +1,6 @@
 services:
   pdfgenrs:
-    image: ghcr.io/navikt/pdfgenrs:1.0.9
+    image: ghcr.io/navikt/pdfgenrs:1.0.12
     platform: linux/amd64
     ports:
       - "8080:8080"
