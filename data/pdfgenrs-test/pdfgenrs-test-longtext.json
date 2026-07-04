@@ -1,0 +1,147 @@
+{
+  "legeerklaering": {
+    "id": "99998",
+    "arbeidsvurderingVedSykefravaer": true,
+    "arbeidsavklaringspenger": true,
+    "yrkesrettetAttforing": true,
+    "uforepensjon": true,
+    "pasient": {
+      "fornavn": "Kristoffer-Alexander Bjørnstjerne Maximilian",
+      "mellomnavn": "Abrahamsen Holmenkollen-Grünerløkka Østerdalen Vestlandsfjellet",
+      "etternavn": "Sørensen-Halvorsen Kristiansand-Trondheim",
+      "fnr": "12345678901",
+      "navKontor": "NAV Arbeids- og velferdsdirektoratet Sentralkontor Østlandet Region Sør-Øst Avdeling for kompliserte saker",
+      "adresse": "Kronprinsens gate 123 B, inngang fra bakgården ved den store eiken, 3. etasje til venstre forbi resepsjonen",
+      "postnummer": 1234,
+      "poststed": "Kristiansand Sør-Østerdalen Nordvestlandet",
+      "yrke": "Spesialist i avansert kvantemekanisk partikkelfysikk og teoretisk astrofysikk med fordypning i kosmologi",
+      "arbeidsgiver": {
+        "navn": "Norges Teknisk-Naturvitenskapelige Universitet Institutt for Fysikk Avdeling for Eksperimentell Partikkelfysikk",
+        "adresse": "Sem Sælands vei 24, Realfagbygget inngang D, rom 4-123, Gløshaugen universitetsområde",
+        "postnummer": 7491,
+        "poststed": "Trondheim"
+      }
+    },
+    "sykdomsopplysninger": {
+      "hoveddiagnose": {
+        "tekst": "Alvorlig og langvarig depressiv episode med psykotiske symptomer og tilleggsdiagnose generalisert angstlidelse med somatiske manifestasjoner",
+        "kode": "F32.3+F41.1"
+      },
+      "bidiagnose": [
+        {
+          "tekst": "Kronisk utmattelsessyndrom med nevrokognitiv funksjonssvikt og vedvarende somatiske symptomer inkludert muskel- og leddsmerter",
+          "kode": "G93.3"
+        },
+        {
+          "tekst": "Uspesifisert rygglidelse med utstrålende smerter til begge underekstremiteter og parestesier i føttene bilateralt",
+          "kode": "M54.9"
+        },
+        {
+          "tekst": "Søvnforstyrrelser av ikke-organisk årsak med innsovningsvansker, hyppige oppvåkninger og tidlig morgenoppvåkning",
+          "kode": "F51.0"
+        }
+      ],
+      "arbeidsuforFra": "2019-06-15T08:30:00.000000",
+      "sykdomshistorie": "Pasienten har en svært lang og komplisert sykehistorie som strekker seg tilbake til tidlig barndom. Allerede i skolealder ble det observert tegn på angst og depresjon, men dette ble ikke fanget opp av helsevesenet på det tidspunktet. I voksen alder har pasienten hatt gjentatte episoder med alvorlig depresjon, første gang diagnostisert i 2005 etter en langvarig periode med arbeidsrelatert stress og familiekonflikter.\n\nI perioden 2005-2010 var pasienten i behandling hos psykolog med jevnlige samtaler hver uke. Det ble forsøkt ulike medikamentelle behandlinger inkludert SSRI-preparater (sertralin, escitalopram) og SNRI (venlafaksin) med varierende effekt. Pasienten opplevde betydelige bivirkninger av flere preparater, inkludert kvalme, svimmelhet, seksuell dysfunksjon og vektøkning.\n\nFra 2010 til 2015 var tilstanden relativt stabil med vedlikeholdsbehandling, men i 2015 oppstod en ny alvorlig episode utløst av samlivsbrudd og tap av bolig. Denne episoden var preget av psykotiske symptomer inkludert paranoide vrangforestillinger og auditive hallusinasjoner. Pasienten ble innlagt på psykiatrisk avdeling i totalt 8 uker fordelt på to innleggelser.\n\nEtter utskrivelse har pasienten vært fulgt opp av spesialisthelsetjenesten med regelmessige konsultasjoner. Tilstanden har gradvis forverret seg siden 2018, med økende funksjonsfall både sosialt og yrkesmessig. Pasienten har nå vært helt arbeidsufør i over ett år og det er betydelig tvil om prognosen for tilbakeføring til arbeidslivet.\n\nDe somatiske plagene med kronisk utmattelse og ryggsmerter kompliserer bildet ytterligere og gjør det vanskelig å gjennomføre aktiviteter som kunne bidratt til bedring av den psykiske helsen, som fysisk aktivitet og sosial deltakelse.\n\nSamlet sett representerer dette en svært sammensatt tilstand der biologiske, psykologiske og sosiale faktorer interagerer på en kompleks måte som krever en helhetlig og langvarig behandlingstilnærming.",
+      "statusPresens": "Ved undersøkelse fremstår pasienten tydelig preget av sin tilstand. Pasienten møter til time i uordentlige klær, virker sliten og nedstemt. Blikkontakten er sparsom og stemmen er lav og monoton. Det er tydelige tegn på psykomotorisk retardasjon med langsomme bevegelser og forlenget latenstid ved besvarelse av spørsmål.\n\nKognitivt fremstår pasienten med nedsatt konsentrasjonsevne og hukommelsesvansker. Pasienten har vanskeligheter med å holde tråden i samtalen og ber gjentatte ganger om at spørsmål gjentas. Det er ingen tegn til aktive psykotiske symptomer ved denne undersøkelsen, men pasienten rapporterer om vedvarende pessimistiske tanker og lav selvfølelse.\n\nSomatisk undersøkelse viser palpatorisk ømhet over hele ryggsøylen, spesielt i lumbalregionen. Lasègues test er positiv bilateralt ved 45 grader. Det er nedsatt kraft i begge underekstremiteter (grad 4/5) og pasienten rapporterer om nummenhet og prikking i føttene.\n\nMontreal Cognitive Assessment (MoCA) gir en skåre på 22/30, som indikerer mild kognitiv svikt. Beck Depression Inventory (BDI-II) gir en skåre på 38, som indikerer alvorlig depresjon. GAD-7 gir en skåre på 16, som indikerer alvorlig angst.\n\nFunksjonsnivået er betydelig redusert. Pasienten klarer basale daglige aktiviteter som personlig hygiene og enkel matlaging, men har store vanskeligheter med mer krevende oppgaver som husarbeid, handling, og sosial deltakelse. Pasienten er i stor grad isolert og har minimal kontakt med omverdenen utover behandlingsapparatet.",
+      "borNavKontoretVurdereOmDetErEnYrkesskade": true,
+      "yrkesSkadeDato": "2018-11-20T14:30:00.000000"
+    },
+    "plan": {
+      "utredning": {
+        "tekst": "Nevropsykologisk utredning for kartlegging av kognitive funksjoner og arbeidsevne, samt MR av lumbalcolumna for avklaring av eventuell nerverotaffeksjon",
+        "dato": "2020-04-15T09:00:00.000000",
+        "antattVentetIUker": 12
+      },
+      "behandling": {
+        "tekst": "Kombinert psykoterapi (kognitiv atferdsterapi og mentaliseringsbasert terapi) to ganger ukentlig, fysioterapi tre ganger ukentlig, samt medikamentell behandling med litium og quetiapin",
+        "dato": "2020-03-20T10:00:00.000000",
+        "antattVentetIUker": 4
+      },
+      "utredningsplan": "Det planlegges en omfattende tverrfaglig utredning som inkluderer følgende elementer:\n\n1. Nevropsykologisk testing med fullstendig kognitivt testbatteri inkludert WAIS-IV, D-KEFS, CVLT-II og Trail Making Test. Formålet er å kartlegge omfanget av de kognitive vanskene og vurdere om disse er forenlig med arbeidslivsdeltakelse.\n\n2. Bildediagnostikk med MR av lumbalcolumna med kontrast for å avklare om det foreligger strukturelle forandringer som kan forklare de utstrålende smertene og parestesiene i underekstremitetene.\n\n3. Nevrografisk undersøkelse av begge underekstremiteter for å kartlegge eventuell nerveaffeksjon.\n\n4. Søvnregistrering (polysomnografi) over minimum to netter for å kartlegge søvnkvalitet og utelukke søvnapné.\n\n5. Blodprøver inkludert fullstendig metabolsk panel, thyreoideafunksjon, vitamin B12, folat, jernstatus og inflammasjonsmarkører.\n\nForventet tidsramme for gjennomføring av hele utredningsprogrammet er 3-4 måneder fra oppstart, avhengig av ventetider ved de ulike avdelingene.",
+      "behandlingsplan": "Behandlingsplanen er sammensatt og krever tett samarbeid mellom flere faggrupper:\n\nPsykiatrisk behandling: Fortsatt oppfølging hos spesialist i psykiatri med konsultasjoner hver 4. uke for medikamentjustering og statusvurdering. Nåværende medikasjon (litium 800mg, quetiapin 300mg, melatonin 5mg) opprettholdes inntil videre med monitorering av serumspeil og nyrefunksjon.\n\nPsykoterapeutisk behandling: Individuell kognitiv atferdsterapi to ganger ukentlig hos psykologspesialist med fokus på aktiveringstiltak, tankeregistrering og eksponeringstrening. I tillegg planlegges oppstart av mentaliseringsbasert gruppeterapi én gang ukentlig når pasienten er tilstrekkelig stabilisert.\n\nFysikalsk behandling: Individuell fysioterapi tre ganger ukentlig med fokus på smertelindring, bevegelighetstrening og gradvis opptrening av fysisk kapasitet. Bassengtrening anbefales som supplement.\n\nSosialfaglig oppfølging: Kontakt med sosionom for bistand med boligsituasjon og økonomi. Vurdering av behov for støttekontakt eller aktivitetstilbud.\n\nForventet varighet av intensiv behandling: minimum 6-12 måneder før det kan forventes vesentlig bedring av funksjonsnivået.",
+      "vurderingAvTidligerePlan": "Tidligere behandlingsplaner har dessverre ikke gitt forventet resultat. Den opprinnelige planen fra 2015 med gradvis tilbakeføring til arbeid gjennom arbeidsutprøving ble avbrutt etter 6 uker grunnet forverring av depressive symptomer og økning i angstnivå. Pasienten opplevde arbeidsutprøvingen som svært belastende og utviklet somatiske stressymptomer inkludert hjertebank, svette og hyperventilering.\n\nDen reviderte planen fra 2017 med fokus på stabilisering gjennom medikamentell behandling og psykoterapi ga en viss bedring i en periode, men effekten var ikke varig. Pasienten rapporterte at overgangen til nytt medikament (fra venlafaksin til duloksetin) ga betydelige bivirkninger som forverret søvnproblemene.\n\nDen nåværende planen skiller seg fra tidligere ved at den legger større vekt på tverrfaglig tilnærming og har en lengre tidshorisont. Vi erkjenner at tidligere planer har vært for optimistiske med tanke på tempo i tilbakeføringsprosessen.",
+      "narSporreOmNyeLegeopplysninger": "Det anbefales at NAV-kontoret ber om oppdaterte legeopplysninger etter gjennomført nevropsykologisk utredning (forventet ferdig innen 4 måneder) og etter minimum 6 måneders intensiv behandling i henhold til behandlingsplanen. Et realistisk tidspunkt for ny vurdering av arbeidsevne og eventuell arbeidsutprøving vil være tidligst 9-12 måneder fra nå, forutsatt at behandlingen gir forventet effekt.\n\nDersom det oppstår vesentlige endringer i tilstanden - enten forverring som krever innleggelse eller uventet rask bedring - vil undertegnede ta initiativ til å informere NAV-kontoret uavhengig av den planlagte tidsrammen.",
+      "videreBehandlingIkkeAktueltGrunn": ""
+    },
+    "forslagTilTiltak": {
+      "behov": true,
+      "kjopAvHelsetjenester": true,
+      "reisetilskudd": true,
+      "aktivSykmelding": false,
+      "hjelpemidlerArbeidsplassen": true,
+      "arbeidsavklaringspenger": true,
+      "friskmeldingTilArbeidsformidling": false,
+      "andreTiltak": "Vurdering av varig tilrettelagt arbeid (VTA) dersom arbeidsavklaringen viser at ordinært arbeid ikke er realistisk. Eventuelt behov for kommunale tjenester som støttekontakt og tilrettelagt botilbud bør også vurderes i samarbeid med kommunens tjenesteapparat.",
+      "naermereOpplysninger": "Pasienten har behov for omfattende tilrettelegging dersom arbeidsutprøving skal forsøkes. Dette inkluderer redusert arbeidstid (maksimalt 2-3 timer daglig i startfasen), skjermet arbeidsmiljø med minimal stimuli, fleksibilitet med hensyn til oppmøtetidspunkt grunnet søvnvansker og medikamentbivirkninger, samt tett oppfølging fra veileder med kompetanse på psykisk helse. Det er viktig at eventuelle tiltak ikke iverksettes for tidlig da dette erfaringsmessig kan føre til forverring.",
+      "tekst": "Pasienten har en alvorlig og sammensatt lidelse som i betydelig grad påvirker funksjonsevnen på alle livsområder. Det er på nåværende tidspunkt ikke realistisk med tilbakeføring til ordinært arbeid. Arbeidsavklaringspenger anbefales for å sikre økonomisk trygghet mens behandling pågår og arbeidsevnen avklares gjennom egnet utredning og eventuell gradvis arbeidsutprøving når tilstanden tillater det."
+    },
+    "funksjonsOgArbeidsevne": {
+      "vurderingFunksjonsevne": "Pasientens funksjonsevne er betydelig nedsatt på alle områder som følge av den sammensatte tilstanden med alvorlig depresjon, kronisk utmattelse og smertetilstand. Kognitivt er det påvist svikt i oppmerksomhet, konsentrasjon, arbeidsminne og prosesseringshastighet som gjør det svært vanskelig å utføre selv enkle arbeidsoppgaver over tid. Den psykomotoriske retardasjonen medfører at alt tar vesentlig lengre tid enn normalt.\n\nFysisk er funksjonsevnen begrenset av kroniske ryggsmerter som forverres ved stillesittende arbeid og ved løfting/bæring. Utmattelsen gjør at pasienten har svært begrenset energi til rådighet gjennom dagen, med behov for hvilepauser etter selv kortvarig aktivitet.\n\nSosialt er pasienten tilnærmet isolert med minimal kontakt utenfor behandlingsapparatet. Evnen til å samhandle med andre mennesker er redusert grunnet sosial angst, lav selvfølelse og manglende overskudd. Dette representerer en vesentlig barriere for arbeidslivsdeltakelse der samhandling med kollegaer og eventuelt kunder/brukere inngår.\n\nSamlet vurderes funksjonsevnen å ligge langt under det som kreves for deltakelse i ordinært arbeidsliv, og det foreligger ikke grunnlag for å anta at dette vil endre seg vesentlig innen de nærmeste 6-12 månedene selv med optimal behandling.",
+      "inntektsgivendeArbeid": true,
+      "hjemmearbeidende": false,
+      "student": false,
+      "annetArbeid": "",
+      "kravTilArbeid": "Stillingen som forsker/universitetslektor krever høy kognitiv kapasitet med evne til langvarig konsentrasjon, selvstendig analytisk arbeid, skriving av vitenskapelige artikler på engelsk, undervisning og veiledning av studenter, samt presentasjoner på internasjonale konferanser. Arbeidet innebærer også betydelig reisevirksomhet til forskningssamarbeid og konferanser i utlandet, noe som stiller krav til fysisk og mental utholdenhet.",
+      "kanGjenopptaTidligereArbeid": false,
+      "kanGjenopptaTidligereArbeidNa": false,
+      "kanGjenopptaTidligereArbeidEtterBehandling": false,
+      "kanIkkeGjenopptaNaverendeArbeid": "Pasientens nåværende kognitive funksjonssvikt med betydelig nedsatt konsentrasjonsevne, redusert arbeidsminne og langsommere prosesseringshastighet er uforenlig med kravene i en akademisk stilling. I tillegg gjør den sosiale angsten og energimangelen det umulig å gjennomføre undervisning og presentasjoner. Den kroniske smerten forverres ved langvarig stillesittende arbeid som er nødvendig ved forskning og skriving.",
+      "kanTaAnnetArbeid": false,
+      "kanTaAnnetArbeidNa": false,
+      "kanTaAnnetArbeidEtterBehandling": true,
+      "kanIkkeTaAnnetArbeid": "På nåværende tidspunkt er funksjonsnivået for lavt til å vurdere noen form for arbeidslivsdeltakelse. Etter gjennomført behandling og stabilisering kan det eventuelt bli aktuelt med skjermet arbeidsutprøving i tilrettelagt setting med svært gradvis opptrapping. Eventuelle hensyn ved valg av annet arbeid: Ingen tidspress, minimalt med sosiale krav, mulighet for hyppige pauser, unngå tunge løft og langvarig stillesitting, forutsigbare arbeidsoppgaver uten krav til multitasking."
+    },
+    "prognose": {
+      "vilForbedreArbeidsevne": true,
+      "anslattVarighetSykdom": "Den psykiske lidelsen vurderes som kronisk med episodisk forløp. Nåværende episode har vart i over 18 måneder og det er erfaringsmessig vanskelig å anslå når en eventuell remisjon vil inntreffe, men med optimal behandling er det håp om gradvis bedring over 1-2 år.",
+      "anslattVarighetFunksjonsnedsetting": "Funksjonsnedsettelsen forventes å vedvare i minimum 12-18 måneder fra nå, forutsatt god behandlingsrespons. Det må påregnes varig restfunksjonssvikt av lettere grad selv ved optimal bedring.",
+      "anslattVarighetNedsattArbeidsevne": "Arbeidsevnen forventes å være vesentlig nedsatt i minimum 18-24 måneder. Deretter kan det eventuelt bli aktuelt med gradvis arbeidsutprøving, men full tilbakeføring til tidligere stillingsnivå vurderes som lite sannsynlig."
+    },
+    "arsakssammenheng": "Funksjonsnedsettelsen har avgjørende og direkte betydning for at arbeidsevnen er nedsatt. Den kognitive svikten alene ville vært tilstrekkelig til å forhindre utførelse av akademisk arbeid, men i kombinasjon med den psykomotoriske retardasjonen, utmattelsen, smertene og den sosiale angsten er arbeidsevnen totalt opphevet for alle typer ordinært arbeid på nåværende tidspunkt.",
+    "andreOpplysninger": "Det bemerkes at pasienten har samarbeidet godt med behandlingsapparatet gjennom hele forløpet og har vist god motivasjon for bedring og tilbakeføring til arbeid. Manglende bedring skyldes sykdommens alvorlighetsgrad og kompleksitet, ikke manglende behandlingsmotivasjon. Pasienten har ingen kjente rusmiddelproblemer. Det foreligger ingen holdepunkter for at tilstanden er simulert eller overdrevet.\n\nDet anbefales at NAV-kontoret vurderer om saken kvalifiserer for innvilgelse av arbeidsavklaringspenger utover ordinær varighet gitt den langvarige og alvorlige tilstanden. Dersom arbeidsavklaringen etter full behandling konkluderer med varig nedsatt arbeidsevne, bør overgang til uføretrygd vurderes.",
+    "kontakt": {
+      "skalKontakteBehandlendeLege": true,
+      "skalKontakteArbeidsgiver": true,
+      "skalKontakteBasisgruppe": true,
+      "kontakteAnnenInstans": "Kommunal psykisk helsetjeneste og NAV Hjelpemiddelsentral for vurdering av ergonomiske hjelpemidler",
+      "onskesKopiAvVedtak": true
+    },
+    "pasientenBurdeIkkeVite": "Behandlende lege vurderer at pasienten på nåværende tidspunkt ikke bør informeres om den gunstige prognosen da dette erfaringsmessig kan føre til prematur avslutning av nødvendig behandling hos denne pasientgruppen.",
+    "tilbakeholdInnhold": true,
+    "signatur": {
+      "dato": "2020-03-15T14:30:00.000000",
+      "navn": "Dr. Kristianna Eleonora Fredrikke Magnusdatter von Holmenkollen-Bygdøy",
+      "adresse": "Universitetssykehuset Nord-Norge, Avdeling for psykiatri og avhengighetsbehandling, Seksjon for stemningslidelser, Bygg 42 inngang C",
+      "postnummer": "9019",
+      "poststed": "Tromsø",
+      "signatur": "K.E.F.M. von Holmenkollen-Bygdøy",
+      "tlfNummer": "+47 77 62 60 00 (sentralbord) / +47 77 62 68 42 (direkte)"
+    },
+    "signaturDato": "2020-03-15T14:30:00.000000"
+  },
+  "validationResult": {
+    "status": "INVALID",
+    "ruleHits": [
+      {
+        "ruleName": "BEHANDLER_MANGLER_AUTORISASJON_I_HPR",
+        "messageForSender": "Den som skrev legeerklæringen manglet autorisasjon. Vennligst kontroller at behandleren har gyldig autorisasjon i Helsepersonellregisteret (HPR) og at denne er registrert med korrekt helsepersonellkategori for utstedelse av legeerklæringer.",
+        "messageForUser": "Behandler har ikke gyldig autorisasjon i HPR",
+        "ruleStatus": "INVALID"
+      },
+      {
+        "ruleName": "PASIENT_MANGLER_FOLKEREGISTRERT_ADRESSE",
+        "messageForSender": "Pasienten mangler folkeregistrert adresse i personregisteret. Dette kan skyldes at personen er registrert med fortrolig adresse (kode 6 eller 7) eller at det er feil i fødselsnummeret som er oppgitt i legeerklæringen.",
+        "messageForUser": "Pasienten har ikke registrert adresse i folkeregisteret",
+        "ruleStatus": "INVALID"
+      },
+      {
+        "ruleName": "LEGEERKLARING_MANGLER_DIAGNOSE_KODEVERK",
+        "messageForSender": "Legeerklæringen inneholder diagnose(r) som ikke er kodet i henhold til godkjent kodeverk (ICD-10 eller ICPC-2). Alle diagnoser må kodes med gyldig kode fra ett av disse kodeverkene for at legeerklæringen skal kunne behandles automatisk.",
+        "messageForUser": "En eller flere diagnoser mangler gyldig kodeverk",
+        "ruleStatus": "INVALID"
+      }
+    ]
+  },
+  "mottattDato": "2020-03-16T08:00:00.000000"
+}

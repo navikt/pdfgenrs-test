@@ -1,0 +1,106 @@
+{
+  "legeerklaering": {
+    "id": "1",
+    "arbeidsvurderingVedSykefravaer": false,
+    "arbeidsavklaringspenger": false,
+    "yrkesrettetAttforing": false,
+    "uforepensjon": false,
+    "pasient": {
+      "fornavn": "A",
+      "etternavn": "B",
+      "fnr": "00000000000",
+      "navKontor": "",
+      "adresse": "",
+      "postnummer": 0,
+      "poststed": "",
+      "yrke": "",
+      "arbeidsgiver": {
+        "navn": "",
+        "adresse": "",
+        "postnummer": 0,
+        "poststed": ""
+      }
+    },
+    "sykdomsopplysninger": {
+      "hoveddiagnose": {
+        "tekst": "X",
+        "kode": "A00"
+      },
+      "bidiagnose": [],
+      "arbeidsuforFra": "2020-01-01T00:00:00",
+      "sykdomshistorie": ".",
+      "statusPresens": ".",
+      "borNavKontoretVurdereOmDetErEnYrkesskade": false,
+      "yrkesSkadeDato": null
+    },
+    "plan": {
+      "utredning": null,
+      "behandling": null,
+      "utredningsplan": "",
+      "behandlingsplan": "",
+      "vurderingAvTidligerePlan": "",
+      "narSporreOmNyeLegeopplysninger": "",
+      "videreBehandlingIkkeAktueltGrunn": ""
+    },
+    "forslagTilTiltak": {
+      "behov": false,
+      "kjopAvHelsetjenester": false,
+      "reisetilskudd": false,
+      "aktivSykmelding": false,
+      "hjelpemidlerArbeidsplassen": false,
+      "arbeidsavklaringspenger": false,
+      "friskmeldingTilArbeidsformidling": false,
+      "andreTiltak": "",
+      "naermereOpplysninger": "",
+      "tekst": ""
+    },
+    "funksjonsOgArbeidsevne": {
+      "vurderingFunksjonsevne": ".",
+      "inntektsgivendeArbeid": false,
+      "hjemmearbeidende": false,
+      "student": false,
+      "annetArbeid": "",
+      "kravTilArbeid": "",
+      "kanGjenopptaTidligereArbeid": false,
+      "kanGjenopptaTidligereArbeidNa": false,
+      "kanGjenopptaTidligereArbeidEtterBehandling": false,
+      "kanIkkeGjenopptaNaverendeArbeid": "",
+      "kanTaAnnetArbeid": false,
+      "kanTaAnnetArbeidNa": false,
+      "kanTaAnnetArbeidEtterBehandling": false,
+      "kanIkkeTaAnnetArbeid": ""
+    },
+    "prognose": {
+      "vilForbedreArbeidsevne": false,
+      "anslattVarighetSykdom": "",
+      "anslattVarighetFunksjonsnedsetting": "",
+      "anslattVarighetNedsattArbeidsevne": ""
+    },
+    "arsakssammenheng": "",
+    "andreOpplysninger": "",
+    "kontakt": {
+      "skalKontakteBehandlendeLege": false,
+      "skalKontakteArbeidsgiver": false,
+      "skalKontakteBasisgruppe": false,
+      "kontakteAnnenInstans": null,
+      "onskesKopiAvVedtak": false
+    },
+    "pasientenBurdeIkkeVite": null,
+    "tilbakeholdInnhold": false,
+    "signatur": {
+      "dato": "2020-01-01T00:00:00",
+      "navn": "L",
+      "adresse": "",
+      "postnummer": "",
+      "poststed": "",
+      "signatur": "L",
+      "tlfNummer": ""
+    },
+    "signaturDato": "2020-01-01T00:00:00"
+  },
+  "validationResult": {
+    "status": "OK",
+    "ruleHits": []
+  },
+  "mottattDato": "2020-01-01T00:00:00"
+}

@@ -1,0 +1,103 @@
+{
+  "legeerklaering": {
+    "id": "99999",
+    "arbeidsvurderingVedSykefravaer": false,
+    "arbeidsavklaringspenger": false,
+    "yrkesrettetAttforing": false,
+    "uforepensjon": false,
+    "pasient": {
+      "fornavn": "Ola",
+      "etternavn": "Nordmann",
+      "fnr": "11111111111",
+      "navKontor": null,
+      "adresse": null,
+      "postnummer": null,
+      "poststed": null,
+      "yrke": null,
+      "arbeidsgiver": {
+        "navn": "Ukjent",
+        "adresse": null,
+        "postnummer": null,
+        "poststed": null
+      }
+    },
+    "sykdomsopplysninger": {
+      "hoveddiagnose": null,
+      "bidiagnose": null,
+      "arbeidsuforFra": null,
+      "sykdomshistorie": null,
+      "statusPresens": null,
+      "borNavKontoretVurdereOmDetErEnYrkesskade": null,
+      "yrkesSkadeDato": null
+    },
+    "plan": {
+      "utredning": null,
+      "behandling": null,
+      "utredningsplan": null,
+      "behandlingsplan": null,
+      "vurderingAvTidligerePlan": null,
+      "narSporreOmNyeLegeopplysninger": null,
+      "videreBehandlingIkkeAktueltGrunn": null
+    },
+    "forslagTilTiltak": {
+      "behov": null,
+      "kjopAvHelsetjenester": null,
+      "reisetilskudd": null,
+      "aktivSykmelding": null,
+      "hjelpemidlerArbeidsplassen": null,
+      "arbeidsavklaringspenger": null,
+      "friskmeldingTilArbeidsformidling": null,
+      "andreTiltak": null,
+      "naermereOpplysninger": null,
+      "tekst": null
+    },
+    "funksjonsOgArbeidsevne": {
+      "vurderingFunksjonsevne": null,
+      "inntektsgivendeArbeid": null,
+      "hjemmearbeidende": null,
+      "student": null,
+      "annetArbeid": null,
+      "kravTilArbeid": null,
+      "kanGjenopptaTidligereArbeid": false,
+      "kanGjenopptaTidligereArbeidNa": null,
+      "kanGjenopptaTidligereArbeidEtterBehandling": null,
+      "kanIkkeGjenopptaNaverendeArbeid": null,
+      "kanTaAnnetArbeid": false,
+      "kanTaAnnetArbeidNa": null,
+      "kanTaAnnetArbeidEtterBehandling": null,
+      "kanIkkeTaAnnetArbeid": null
+    },
+    "prognose": {
+      "vilForbedreArbeidsevne": null,
+      "anslattVarighetSykdom": null,
+      "anslattVarighetFunksjonsnedsetting": null,
+      "anslattVarighetNedsattArbeidsevne": null
+    },
+    "arsakssammenheng": null,
+    "andreOpplysninger": null,
+    "kontakt": {
+      "skalKontakteBehandlendeLege": null,
+      "skalKontakteArbeidsgiver": null,
+      "skalKontakteBasisgruppe": null,
+      "kontakteAnnenInstans": null,
+      "onskesKopiAvVedtak": null
+    },
+    "pasientenBurdeIkkeVite": null,
+    "tilbakeholdInnhold": null,
+    "signatur": {
+      "dato": null,
+      "navn": "Ukjent Lege",
+      "adresse": null,
+      "postnummer": null,
+      "poststed": null,
+      "signatur": null,
+      "tlfNummer": null
+    },
+    "signaturDato": null
+  },
+  "validationResult": {
+    "status": "OK",
+    "ruleHits": []
+  },
+  "mottattDato": null
+}
