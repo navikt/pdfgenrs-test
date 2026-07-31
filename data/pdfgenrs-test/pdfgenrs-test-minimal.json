@@ -1,0 +1,64 @@
+{
+  "legeerklaering": {
+    "id": "00001",
+    "arbeidsvurderingVedSykefravaer": false,
+    "arbeidsavklaringspenger": false,
+    "yrkesrettetAttforing": false,
+    "uforepensjon": false,
+    "pasient": {
+      "fornavn": "Kari",
+      "mellomnavn": null,
+      "etternavn": "Minimal",
+      "fnr": "1111111111",
+      "navKontor": "NAV Test",
+      "adresse": null,
+      "postnummer": null,
+      "poststed": null,
+      "yrke": "Ukjent",
+      "arbeidsgiver": {
+        "navn": "Ukjent arbeidsgiver"
+      }
+    },
+    "sykdomsopplysninger": {
+      "arbeidsuforFra": null,
+      "sykdomshistorie": null,
+      "statusPresens": null,
+      "borNavKontoretVurdereOmDetErEnYrkesskade": false
+    },
+    "plan": {
+      "utredning": null,
+      "behandling": null,
+      "utredningsplan": null,
+      "behandlingsplan": null,
+      "vurderingAvTidligerePlan": null,
+      "narSporreOmNyeLegeopplysninger": null,
+      "videreBehandlingIkkeAktueltGrunn": null
+    },
+    "forslagTilTiltak": {
+      "behov": false
+    },
+    "funksjonsOgArbeidsevne": {
+      "vurderingFunksjonsevne": null,
+      "kanGjenopptaTidligereArbeid": false,
+      "kanTaAnnetArbeid": false
+    },
+    "prognose": {
+      "vilForbedreArbeidsevne": false,
+      "anslattVarighetSykdom": "",
+      "anslattVarighetFunksjonsnedsetting": "",
+      "anslattVarighetNedsattArbeidsevne": ""
+    },
+    "kontakt": {},
+    "signatur": {
+      "dato": null,
+      "navn": "Ukjent lege",
+      "adresse": "",
+      "postnummer": "",
+      "poststed": ""
+    }
+  },
+  "validationResult": {
+    "status": "OK",
+    "ruleHits": []
+  }
+}

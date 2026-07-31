@@ -1,0 +1,120 @@
+{
+  "legeerklaering": {
+    "id": "99999",
+    "arbeidsvurderingVedSykefravaer": false,
+    "arbeidsavklaringspenger": false,
+    "yrkesrettetAttforing": true,
+    "uforepensjon": false,
+    "pasient": {
+      "fornavn": "Ola",
+      "mellomnavn": null,
+      "etternavn": "Nordmann",
+      "fnr": "9876543210",
+      "navKontor": "NAV Oslo",
+      "adresse": "Testgata 1",
+      "postnummer": 1234,
+      "poststed": "Oslo",
+      "yrke": "Ingeniør",
+      "tlfNummer": "12345678",
+      "arbeidsgiver": {
+        "navn": "Test AS",
+        "adresse": "Næringsveien 5",
+        "postnummer": 4321,
+        "poststed": "Bergen"
+      }
+    },
+    "sykdomsopplysninger": {
+      "hoveddiagnose": {
+        "tekst": "Ryggplager",
+        "kode": "L03"
+      },
+      "bidiagnose": [
+        {
+          "tekst": "Depresjon",
+          "kode": "P76"
+        },
+        {
+          "tekst": "Søvnproblemer",
+          "kode": "P06"
+        }
+      ],
+      "arbeidsuforFra": "2024-01-15T08:00:00",
+      "sykdomshistorie": "Pasienten har hatt ryggplager i flere måneder.",
+      "statusPresens": "Pasienten er i bedring men ikke fullt arbeidsfør.",
+      "borNavKontoretVurdereOmDetErEnYrkesskade": false
+    },
+    "plan": {
+      "utredning": {
+        "tekst": "Henvist til MR-undersøkelse av rygg",
+        "dato": "2024-02-01T08:00:00",
+        "antattVentetIUker": 4
+      },
+      "behandling": null,
+      "utredningsplan": "MR og oppfølging hos spesialist.",
+      "behandlingsplan": "",
+      "vurderingAvTidligerePlan": "",
+      "narSporreOmNyeLegeopplysninger": "Om 3 måneder.",
+      "videreBehandlingIkkeAktueltGrunn": ""
+    },
+    "forslagTilTiltak": {
+      "behov": true,
+      "kjopAvHelsetjenester": false,
+      "reisetilskudd": true,
+      "aktivSykmelding": true,
+      "hjelpemidlerArbeidsplassen": false,
+      "arbeidsavklaringspenger": false,
+      "friskmeldingTilArbeidsformidling": true,
+      "andreTiltak": null,
+      "naermereOpplysninger": "",
+      "tekst": ""
+    },
+    "funksjonsOgArbeidsevne": {
+      "vurderingFunksjonsevne": "Nedsatt bevegelse i ryggen.",
+      "inntektsgivendeArbeid": true,
+      "hjemmearbeidende": false,
+      "student": true,
+      "annetArbeid": null,
+      "kravTilArbeid": "Lett kontorarbeid",
+      "kanGjenopptaTidligereArbeid": false,
+      "kanGjenopptaTidligereArbeidNa": false,
+      "kanGjenopptaTidligereArbeidEtterBehandling": false,
+      "kanIkkeGjenopptaNaverendeArbeid": "Tunge løft",
+      "kanTaAnnetArbeid": false,
+      "kanTaAnnetArbeidNa": false,
+      "kanTaAnnetArbeidEtterBehandling": false,
+      "kanIkkeTaAnnetArbeid": "Stillinger som krever tunge løft"
+    },
+    "prognose": {
+      "vilForbedreArbeidsevne": false,
+      "anslattVarighetSykdom": "6 måneder",
+      "anslattVarighetFunksjonsnedsetting": "3 måneder",
+      "anslattVarighetNedsattArbeidsevne": "6 måneder"
+    },
+    "arsakssammenheng": "Ryggplagene er direkte årsak til nedsatt arbeidsevne.",
+    "andreOpplysninger": "",
+    "kontakt": {
+      "skalKontakteBehandlendeLege": false,
+      "skalKontakteArbeidsgiver": true,
+      "skalKontakteBasisgruppe": true,
+      "kontakteAnnenInstans": "Fysioterapeut",
+      "onskesKopiAvVedtak": false
+    },
+    "pasientenBurdeIkkeVite": "Diagnosen er alvorlig og bør formidles av lege.",
+    "tilbakeholdInnhold": false,
+    "signatur": {
+      "dato": "2024-01-20T10:00:00",
+      "navn": "Dr. Anne Hansen",
+      "adresse": "Legekontoret 7",
+      "postnummer": "1234",
+      "poststed": "Oslo",
+      "signatur": "Dr. Anne Hansen",
+      "tlfNummer": "22334455"
+    },
+    "signaturDato": "2024-01-20T10:00:00"
+  },
+  "validationResult": {
+    "status": "OK",
+    "ruleHits": []
+  },
+  "mottattDato": null
+}
