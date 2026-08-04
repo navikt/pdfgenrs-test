@@ -39,6 +39,8 @@ With `./run_development.sh` running, open:
 
 The container runs with `DEV_MODE=true`, so template changes are hot-reloaded.
 
+> **Note:** This URL uses a GET request, which is only supported when `DEV_MODE=true`. In production, the `/api/v1/genpdf/` endpoint requires a POST request with a JSON body.
+
 ### Endpoint pattern and data structure
 
 Use:
