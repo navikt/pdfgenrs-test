@@ -1,0 +1,7 @@
+{
+  "title": "Star Example",
+  "points": 5,
+  "fillColor": "#FFD700",
+  "strokeColor": "#B8860B",
+  "label": "A 5-pointed star drawn with Typst"
+}
