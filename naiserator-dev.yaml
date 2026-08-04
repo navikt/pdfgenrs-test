@@ -10,7 +10,7 @@ spec:
   port: 8080
   env:
     - name: DEV_MODE
-      value: true
+      value: "true"
   replicas:
     min: 1
     max: 2
