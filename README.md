@@ -31,6 +31,8 @@ Alternatively, run the container directly with the provided shell script:
 ./run_development.sh
 ```
 
+The script also runs the image as `linux/amd64` by default, so it works on arm64 hosts unless you override `PDFGENRS_PLATFORM`.
+
 ### Preview output locally
 
 With `./run_development.sh` running, open:
