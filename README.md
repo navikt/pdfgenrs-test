@@ -19,7 +19,7 @@ Start the development server:
 docker compose up --watch
 ```
 
-This mounts your local `templates/`, `data/`, `fonts/`, and `resources/` directories into the container with `DEV_MODE=true`, so template changes are picked up automatically.
+This mounts your local `templates/`, `data/`, `fonts/`, and `resources/` directories into the container with `DEV_MODE=true`. Template changes are picked up automatically.
 
 > **Note:** The `pdfgenrs` image is only published for `linux/amd64`. The compose file sets `platform: linux/amd64` so it works on arm64 hosts (e.g., Apple Silicon Mac) without extra flags.
 
@@ -31,6 +31,7 @@ Alternatively, run the container directly with the provided shell script:
 ./run_development.sh
 ```
 The script defaults to `linux/amd64`; set `PDFGENRS_PLATFORM` to override it for another target platform.
+Template changes are picked up automatically.
 
 
 ### Preview output locally
