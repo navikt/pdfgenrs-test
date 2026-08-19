@@ -66,7 +66,6 @@ docker build -t pdfgenrs-test .
 Update the image version in all of these files:
 
 - `Dockerfile`: `FROM ghcr.io/navikt/pdfgenrs:<version>`
-- `run_development.sh`: default value of `PDFGENRS_IMAGE`
 - `.github/workflows/test.yml`: job `env.PDFGENRS_IMAGE`
 
 ## Live preview endpoints
