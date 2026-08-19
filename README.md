@@ -13,10 +13,10 @@ Template repository for `pdfgenrs-test`, used to generate PDFs through the pdfge
 
 ### Docker Compose (recommended for template development)
 
-Start the development server with hot-reload:
+Start the development server:
 
 ```bash
-docker compose up
+docker compose up --watch
 ```
 
 This mounts your local `templates/`, `data/`, `fonts/`, and `resources/` directories into the container with `DEV_MODE=true`, so template changes are picked up automatically.
@@ -30,6 +30,8 @@ Alternatively, run the container directly with the provided shell script:
 ```bash
 ./run_development.sh
 ```
+The script defaults to `linux/amd64`; set `PDFGENRS_PLATFORM` to override it for another target platform.
+
 
 ### Preview output locally
 
@@ -37,7 +39,7 @@ With `./run_development.sh` running, open:
 
 `http://0.0.0.0:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test`
 
-The container runs with `DEV_MODE=true`, so template changes are hot-reloaded.
+The container runs with `DEV_MODE=true`
 
 > **Note:** This URL uses a GET request, which is only supported when `DEV_MODE=true`. In production, the `/api/v1/genpdf/` endpoint requires a POST request with a JSON body.
 
@@ -64,7 +66,6 @@ docker build -t pdfgenrs-test .
 Update the image version in all of these files:
 
 - `Dockerfile`: `FROM ghcr.io/navikt/pdfgenrs:<version>`
-- `docker-compose.yml`: `image: ghcr.io/navikt/pdfgenrs:<version>`
 - `run_development.sh`: default value of `PDFGENRS_IMAGE`
 - `.github/workflows/test.yml`: job `env.PDFGENRS_IMAGE`
 
