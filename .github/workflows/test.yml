@@ -8,13 +8,16 @@ jobs:
   test-pdf-generation:
     name: Test PDF generation
     runs-on: ubuntu-latest
-    env:
-      PDFGENRS_IMAGE: ghcr.io/navikt/pdfgenrs:1.0.24
     permissions:
       contents: read
     steps:
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Read pdfgenrs image from Dockerfile
+        run: |
+          PDFGENRS_IMAGE="$(awk '$1 == "FROM" { print $2; exit }' Dockerfile)"
+          test -n "$PDFGENRS_IMAGE"
+          echo "PDFGENRS_IMAGE=$PDFGENRS_IMAGE" >> "$GITHUB_ENV"
       - name: Start pdfgenrs container
         run: |
           docker pull "$PDFGENRS_IMAGE"
