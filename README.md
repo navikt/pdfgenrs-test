@@ -72,6 +72,9 @@ The test workflow reads the image reference from the Dockerfile automatically.
 
 ## Live preview endpoints
 
+> **Note:** 
+> Only work on device that is connected to Navs network, etc naisdevice
+
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genhtml/pdfgenrs-test/pdfgenrs-test
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genpdf/nav-brev/brev
