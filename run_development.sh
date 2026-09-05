@@ -13,6 +13,7 @@ run_container() {
         -v "$CURRENT_PATH/resources:/app/resources" \
         -p 8080:8080 \
         -e DEV_MODE=true \
+        -e SERVER_PORT=8081 \
         --rm \
         "$PDFGENRS_IMAGE" &
     CONTAINER_PID=$!

@@ -29,6 +29,7 @@ jobs:
             -v ${{ github.workspace }}/resources:/app/resources \
             -p 8080:8080 \
             -e DEV_MODE=true \
+            -e SERVER_PORT=8081 \
             --detach \
             "$PDFGENRS_IMAGE"
       - name: Wait for service to be ready
@@ -63,9 +64,6 @@ jobs:
             # Test PDF generation
             echo "--- PDF generation for $group/$name ---"
             http_status=$(curl -s -w "%{http_code}" \
-              -X POST \
-              -H "Content-Type: application/json" \
-              -d @"$data_file" \
               http://localhost:8080/api/v1/genpdf/"$group"/"$name" \
               -o response.pdf)
 
@@ -94,9 +92,6 @@ jobs:
             # Test HTML generation
             echo "--- HTML generation for $group/$name ---"
             http_status=$(curl -s -w "%{http_code}" \
-              -X POST \
-              -H "Content-Type: application/json" \
-              -d @"$data_file" \
               http://localhost:8080/api/v1/genhtml/"$group"/"$name" \
               -o response.html)
 
@@ -123,6 +118,13 @@ jobs:
             echo "HTML generation successful for $group/$name"
             echo "::endgroup::"
           done
+
+          http_status=$(curl -s -o /dev/null -w "%{http_code}" \
+            -X POST http://localhost:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test)
+          if [ "$http_status" != "405" ]; then
+            echo "::error::Expected POST requests to return HTTP 405 but got $http_status"
+            exit 1
+          fi
 
           echo ""
           echo "=== Results: $((total - failed))/$total templates passed ==="

@@ -42,7 +42,7 @@ With `./run_development.sh` running, open:
 
 The container runs with `DEV_MODE=true`
 
-> **Note:** This URL uses a GET request, which is only supported when `DEV_MODE=true`. In production, the `/api/v1/genpdf/` endpoint requires a POST request with a JSON body.
+> **Note:** This deployment exposes only GET requests. Other methods, including POST, return `405 Method Not Allowed`.
 
 ### Endpoint pattern and data structure
 

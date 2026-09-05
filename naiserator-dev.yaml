@@ -11,6 +11,8 @@ spec:
   env:
     - name: DEV_MODE
       value: "true"
+    - name: SERVER_PORT
+      value: "8081"
     - name: MAX_CONCURRENT_COMPILATIONS
       value: "4"
     - name: COMEMO_EVICTION_THRESHOLD

@@ -7,6 +7,7 @@ services:
       - "8080:8080"
     environment:
       - DEV_MODE=true
+      - SERVER_PORT=8081
     develop:
       watch:
         - path: ./templates
