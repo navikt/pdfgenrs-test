@@ -1,4 +1,3 @@
-// JSON data is injected by the server as a virtual file at /data/nav-brev/brev.json.
 #let data = json("/data/nav-brev/brev.json")
 
 #let recipient = data.at("mottaker", default: (:))
