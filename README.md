@@ -74,6 +74,7 @@ The test workflow reads the image reference from the Dockerfile automatically.
 
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test
 - https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genhtml/pdfgenrs-test/pdfgenrs-test
+- https://pdfgenrs-test.ansatt.dev.nav.no/api/v1/genpdf/nav-brev/brev
 
 ## Contact
 
