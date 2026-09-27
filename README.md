@@ -38,11 +38,12 @@ Template changes are picked up automatically.
 
 With `./run_development.sh` running, open:
 
-`http://0.0.0.0:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test`
+- PDF: `http://0.0.0.0:8080/api/v1/genpdf/pdfgenrs-test/pdfgenrs-test`
+- HTML: `http://0.0.0.0:8080/api/v1/genhtml/pdfgenrs-test/pdfgenrs-test`
 
-The container runs with `DEV_MODE=true`
+The container runs with `DEV_MODE=true`.
 
-> **Note:** This URL uses a GET request, which is only supported when `DEV_MODE=true`. In production, the `/api/v1/genpdf/` endpoint requires a POST request with a JSON body.
+> **Note:** These URLs use GET requests, which are only supported when `DEV_MODE=true`. In production, the `/api/v1/genpdf/` and `/api/v1/genhtml/` endpoints require POST requests with a JSON body.
 
 ### Endpoint pattern and data structure
 
