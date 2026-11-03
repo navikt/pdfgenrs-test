@@ -5,7 +5,13 @@ on:
       - main
 
 jobs:
+  test-pdf-generation:
+    name: Test PDF generation
+    uses: ./.github/workflows/test.yml
+    permissions:
+      contents: read
   build-push-deploy:
+    needs: test-pdf-generation
     permissions:
       packages: "write"
       contents: "read"
